@@ -1,0 +1,10 @@
+*.tgz
+*.tar
+*.zip
+*.pt
+*.pth
+data/
+datasets/
+mvtec/
+__pycache__/
+dataset/
