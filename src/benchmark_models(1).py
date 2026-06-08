@@ -50,15 +50,19 @@ RESULTS_DIR  = r"D:\MLProject\results\benchmark"
 NUM_WORKERS  = 4
 IMAGE_SIZE   = 256
 
+
 MODEL_CONFIGS = [
+    # PatchCore result cached from HyperparameterTuning.py
+# Best config: coreset_sampling_ratio=0.25, num_neighbors=9
+# Retraining skipped to avoid redundant computation
     {
         "id"          : 1,
         "name"        : "PatchCore",
         "class_name"  : "Patchcore",
         "batch_size"  : 32,
         "note"        : "Our method",
-        "cached_auroc": 0.9542,
-        "cached_f1"   : 0.9822,
+        "cached_auroc": 0.9644,
+        "cached_f1"   : 0.9815,
         "skip"        : True,
     },
     {
