@@ -30,7 +30,7 @@ CONFIG = {
     "num_neighbors"           : 9,
     "train_batch_size"        : 32,
     "eval_batch_size"         : 32,
-    "num_workers"             : 4,
+    "num_workers"             : 0,
     "seed"                    : 42,
 }
 
@@ -120,7 +120,7 @@ def build_datamodule(cfg):
         "name"             : cfg["dataset_name"],
         "root"             : cfg["dataset_root"],
         "normal_dir"       : "train/good",
-        "abnormal_dir"     : "test/defective",
+        "abnormal_dir"     : "test/defect",
         "normal_test_dir"  : "test/good",
         "train_batch_size" : cfg["train_batch_size"],
         "eval_batch_size"  : cfg["eval_batch_size"],
